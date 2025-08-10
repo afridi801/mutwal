@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afridi Law Associates | Matwali Afridi - Experienced Karachi Lawyer</title>
+    <meta name="description" content="Matwali Afridi, a seasoned Karachi lawyer with 20+ years of experience, provides expert legal services in corporate, criminal, and civil litigation.">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #1a3e72;
+            --secondary-color: #d4af37;
+            --accent-color: #8b0000;
+            --dark-color: #222;
+            --light-color: #f8f8f8;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --max-width: 1200px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f9f9f9;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 0 2rem;
+            overflow: hidden;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+            border-radius: 4px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        
+        .btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+        
+        .btn-secondary {
+            background: var(--secondary-color);
+            color: #000;
+        }
+        
+        .btn-secondary:hover {
+            background: #e8c252;
+            color: #000;
+        }
+        
+        .text-primary {
+            color: var(--primary-color);
+        }
+        
+        .text-secondary {
+            color: var(--secondary-color);
+        }
+        
+        .text-accent {
+            color: var(--accent-color);
+        }
+        
+        .bg-dark {
+            background: var(--dark-color);
+            color: #fff;
+        }
+        
+        .bg-light {
+            background: var(--light-color);
+            color: var(--dark-color);
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background: var(--secondary-color);
+            bottom: 0;
+            left: 20%;
+        }
+        
+        .section-padding {
+            padding: 6rem 0;
+        }
+        
+        /* Header */
+        #main-header {
+            background: #fff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--secondary-color);
+        }
+        
+        #main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            position: relative;
+        }
+        
+        #main-header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        #main-header .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            object-fit: contain;
+        }
+        
+        #main-header .logo span {
+            color: var(--accent-color);
+        }
+        
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        #main-nav {
+            display: flex;
+        }
+        
+        #main-nav li {
+            margin-left: 2rem;
+            position: relative;
+        }
+        
+        #main-nav li a {
+            padding: 0.5rem 0;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--dark-color);
+            position: relative;
+        }
+        
+        #main-nav li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        #main-nav li a:hover:after {
+            width: 100%;
+        }
+        
+        #main-nav li a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(26, 62, 114, 0.85), rgba(26, 62, 114, 0.85)), 
+                        url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 90vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            position: relative;
+        }
+        
+        #hero .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        #hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        #hero h1 span {
+            color: var(--secondary-color);
+        }
+        
+        #hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+        
+        .hero-btns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        /* About Section */
+        #about {
+            padding: 6rem 0;
+            background: #fff;
+        }
+        
+        #about .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        #about img {
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+        
+        #about img:hover {
+            transform: scale(1.02);
+        }
+        
+        #about h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            line-height: 1.3;
+        }
+        
+        #about p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .about-highlights {
+            margin: 2rem 0;
+        }
+        
+        .about-highlights li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .about-highlights li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        /* Services Section */
+        #services {
+            padding: 6rem 0;
+            background: var(--light-color);
+        }
+        
+        #services .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        #services .service-box {
+            background: #fff;
+            padding: 2.5rem 2rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--secondary-color);
+            text-align: center;
+        }
+        
+        #services .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        #services .service-box i {
+            color: var(--secondary-color);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        #services .service-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        #services .service-box p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        /* Team Section */
+        #team {
+            padding: 6rem 0;
+            background: #fff;
+        }
+        
+        #team .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        #team .team-member {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        #team .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        #team .team-member img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 5px solid var(--light-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        #team .team-member h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        #team .team-member p.position {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        #team .team-member p.bio {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        
+        .team-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--light-color);
+            color: var(--primary-color);
+            border-radius: 50%;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .team-social a:hover {
+            background: var(--primary-color);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        /* Testimonials */
+        #testimonials {
+            padding: 6rem 0;
+            background: var(--light-color);
+        }
+        
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '\f10d';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--secondary-color);
+            font-size: 3rem;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: 0.2;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+        
+        .author-info p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        #contact {
+            padding: 6rem 0;
+            background: #fff;
+        }
+        
+        #contact .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        #contact .contact-info {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 3rem;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        #contact .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        #contact .contact-info h3:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+            bottom: 0;
+            left: 0;
+        }
+        
+        #contact .contact-info p {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        #contact .contact-info i {
+            margin-right: 1rem;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+        
+        #contact .contact-form {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #eee;
+        }
+        
+        #contact .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        #contact .contact-form h3:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+            bottom: 0;
+            left: 0;
+        }
+        
+        #contact .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        #contact .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        #contact .form-group input,
+        #contact .form-group textarea,
+        #contact .form-group select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Georgia', serif;
+            transition: all 0.3s ease;
+        }
+        
+        #contact .form-group input:focus,
+        #contact .form-group textarea:focus,
+        #contact .form-group select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(26, 62, 114, 0.1);
+        }
+        
+        #contact .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        #main-footer {
+            background: var(--dark-color);
+            color: #fff;
+            padding: 4rem 0 2rem;
+        }
+        
+        #main-footer .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        #main-footer .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        #main-footer .footer-col h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary-color);
+            bottom: 0;
+            left: 0;
+        }
+        
+        #main-footer .footer-col p {
+            margin-bottom: 1rem;
+            color: #bbb;
+            line-height: 1.8;
+        }
+        
+        #main-footer .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        #main-footer .footer-links a {
+            color: #bbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        
+        #main-footer .footer-links a:hover {
+            color: var(--secondary-color);
+            transform: translateX(5px);
+        }
+        
+        #main-footer .footer-links i {
+            margin-right: 0.5rem;
+            color: var(--secondary-color);
+        }
+        
+        #main-footer .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+        }
+        
+        #main-footer .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        #main-footer .social-links a:hover {
+            background: var(--secondary-color);
+            color: #000;
+            transform: translateY(-3px);
+        }
+        
+        #main-footer .copyright {
+            padding-top: 2rem;
+            border-top: 1px solid #444;
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+        
+        /* Page Navigation */
+        .page {
+            display: none;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            #hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            #about .about-content {
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #main-header .container {
+                flex-direction: row;
+                padding: 1rem;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            #main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                z-index: 1000;
+                border-top: 1px solid #eee;
+            }
+            
+            #main-nav.active {
+                display: flex;
+                animation: fadeInDown 0.3s ease;
+            }
+            
+            #main-nav li {
+                margin: 0;
+                padding: 0.5rem 2rem;
+                border-bottom: 1px solid #eee;
+            }
+            
+            #main-nav li a {
+                display: block;
+                padding: 0.5rem 0;
+            }
+            
+            #hero {
+                height: auto;
+                padding: 6rem 0;
+                text-align: center;
+            }
+            
+            #hero .hero-content {
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            #hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            #hero p {
+                margin: 0 auto 2.5rem;
+            }
+            
+            .hero-btns {
+                justify-content: center;
+            }
+            
+            #about .about-content,
+            #contact .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            #about img {
+                order: -1;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-padding {
+                padding: 4rem 0;
+            }
+            
+            @keyframes fadeInDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        
+        @media (max-width: 576px) {
+            #hero h1 {
+                font-size: 2rem;
+            }
+            
+            #hero p {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                width: 100%;
+                margin-right: 0;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+            }
+            
+            #contact .contact-info,
+            #contact .contact-form {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMWEzZTcyIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHptMCA0NDhjLTExMC41IDAtMjAwLTg5LjUtMjAwLTIwMFMxNDUuNSA1NiAyNTYgNTZzMjAwIDg5LjUgMjAwIDIwMC04OS41IDIwMC0yMDAgMjAwWm0xMDEuOC0yNjEuN0wtMjE2LjIgMzUyLjJjLTQuNy00LjctNC43LTEyLjMgMC0xN0wzNTcuOCAyNDYuM2M0LjctNC43IDQuNy0xMi4zIDAtMTdsLTExMC41LTExMGMtNC43LTQuNy0xMi4zLTQuNy0xNyAwbC0xNyAxNyA5My41IDkzLjUtNjIuMyA2Mi4zLTkzLjUtOTMuNS0xNy0xN2MtNC43LTQuNy0xMi4zLTQuNy0xNyAwbC0xMTAgMTEwLjVjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wxMTAuNSAxMTBjNC43IDQuNyAxMi4zIDQuNyAxNyAwbDE3LTE3LTkzLjUtOTMuNSA2Mi4zLTYyLjMgOTMuNSA5My41IDE3IDE3YzQuNyA0LjcgMTIuMyA0LjcgMTcgMGwxMTAuNS0xMTFjNC42LTQuNiA0LjYtMTIuMiAwLTE2Ljl6Ii8+PC9zdmc+" alt="Afridi Law Associates Logo">
+                Afridi <span>Law Associates</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="main-nav">
+                <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="services">Services</a></li>
+                <li><a href="#" class="nav-link" data-page="team">Our Team</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Expert Legal Counsel from <span>Matwali Afridi</span></h1>
+                    <p>With over 20 years of experience in Karachi's legal landscape, I provide strategic counsel and vigorous representation for clients facing complex legal challenges.</p>
+                    <div class="hero-btns">
+                        <a href="#" class="btn nav-link" data-page="contact">Schedule Consultation</a>
+                        <a href="#" class="btn btn-secondary nav-link" data-page="services">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section id="about-preview" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">About Our Practice</h2>
+                <div class="about-preview-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Founded by Matwali Afridi in 2003, Afridi Law Associates has established itself as one of Karachi's most respected legal practices. Our firm combines traditional legal values with modern strategies to deliver exceptional results for our clients.</p>
+                    <a href="#" class="btn nav-link" data-page="about">Learn More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section id="services-preview" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Our Legal Services</h2>
+                <div class="services-container" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="service-box">
+                        <i class="fas fa-gavel"></i>
+                        <h3>Criminal Defense</h3>
+                        <p>Aggressive representation for all criminal matters in Karachi courts.</p>
+                        <a href="#" class="btn btn-secondary nav-link" data-page="services" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Learn More</a>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Corporate Law</h3>
+                        <p>Comprehensive legal solutions for businesses and corporations.</p>
+                        <a href="#" class="btn btn-secondary nav-link" data-page="services" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Learn More</a>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-home"></i>
+                        <h3>Real Estate</h3>
+                        <p>Expert guidance for property transactions and disputes.</p>
+                        <a href="#" class="btn btn-secondary nav-link" data-page="services" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>Mr. Afridi's representation in my criminal case was exceptional. His deep knowledge of Karachi's legal system and strategic approach resulted in the best possible outcome for my situation.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                            <div class="author-info">
+                                <h4>Ali Raza</h4>
+                                <p>Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>I've worked with several lawyers over the years, but Matwali Afridi stands out for his integrity, attention to detail, and commitment to his clients. He handled our corporate merger flawlessly.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                            <div class="author-info">
+                                <h4>Fatima Khan</h4>
+                                <p>CEO, Tech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <h2 class="section-title">About Our Firm</h2>
+            <div class="about-content">
+                <div>
+                    <h2>20+ Years of Legal Excellence in Karachi</h2>
+                    <p>Founded by Matwali Afridi in 2003, Afridi Law Associates has grown from a solo practice to one of Karachi's most respected law firms. Our founder's vision was to create a practice that combines traditional legal values with innovative strategies to serve clients effectively in Pakistan's complex legal environment.</p>
+                    <p>Mr. Afridi began his career as a public prosecutor before establishing his private practice, giving him unique insights into both sides of the legal system. This experience informs our approach to every case we handle.</p>
+                    
+                    <div class="about-highlights">
+                        <h3 style="margin: 2rem 0 1rem; color: var(--primary-color);">Why Choose Our Firm:</h3>
+                        <ul>
+                            <li>Deep knowledge of Karachi's legal landscape and court systems</li>
+                            <li>Personalized attention from experienced attorneys</li>
+                            <li>Strategic approach tailored to each client's specific needs</li>
+                            <li>Proven track record of successful outcomes</li>
+                            <li>Commitment to integrity and ethical practice</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="btn nav-link" data-page="team">Meet Our Team</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Afridi Law Associates Office">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Page -->
+    <section id="services" class="page">
+        <div class="container">
+            <h2 class="section-title">Our Legal Services</h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Criminal Defense</h3>
+                    <p>Comprehensive representation in all criminal matters including white-collar crimes, violent offenses, and drug-related cases. We handle bail applications, trial defense, and appeals in Karachi courts.</p>
+                    <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Corporate Law</h3>
+                    <p>Full-service corporate legal support including company formation, compliance, mergers & acquisitions, joint ventures, and corporate governance matters for businesses operating in Karachi.</p>
+                    <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-home"></i>
+                    <h3>Real Estate</h3>
+                    <p>Expert guidance on property transactions, title verification, development agreements, landlord-tenant disputes, and property-related litigation in Karachi's competitive real estate market.</p>
+                    <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-users"></i>
+                    <h3>Family Law</h3>
+                    <p>Sensitive handling of divorce, child custody, inheritance disputes, and other family matters with the discretion and compassion these personal situations require under Pakistani law.</p>
+                    <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-file-contract"></i>
+                                    <div class="service-box">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Contract Law</h3>
+                    <p>Drafting, reviewing, and negotiating contracts of all types including employment agreements, service contracts, partnership agreements, and commercial leases with precision and foresight.</p>
+                    <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Civil Litigation</h3>
+                    <p>Aggressive representation in civil disputes including debt recovery, property disputes, breach of contract cases, and other civil matters in Karachi courts at all levels.</p>
+                    <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Page -->
+    <section id="team" class="page">
+        <div class="container">
+            <h2 class="section-title">Our Legal Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Matwali Afridi">
+                    <h3>Matwali Afridi</h3>
+                    <p class="position">Founding Partner</p>
+                    <p class="bio">With over 20 years of experience in Karachi courts, Mr. Afridi specializes in criminal defense and corporate law, bringing strategic insight to every case.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Sarah Ahmed">
+                    <h3>Sarah Ahmed</h3>
+                    <p class="position">Senior Associate</p>
+                    <p class="bio">Specializing in family law and civil litigation, Ms. Ahmed brings compassion and tenacity to her cases, with a track record of successful outcomes.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Kamran Siddiqui">
+                    <h3>Kamran Siddiqui</h3>
+                    <p class="position">Corporate Law Specialist</p>
+                    <p class="bio">With expertise in corporate governance and compliance, Mr. Siddiqui advises businesses on navigating Pakistan's complex regulatory environment.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Suite 402, Business Plaza, Shahrah-e-Faisal, Karachi, Pakistan</p>
+                    <p><i class="fas fa-phone-alt"></i> +92 21 34567890</p>
+                    <p><i class="fas fa-mobile-alt"></i> +92 300 1234567</p>
+                    <p><i class="fas fa-envelope"></i> info@afridilaw.com</p>
+                    <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                    <div class="social-links" style="margin-top: 2rem;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Schedule a Consultation</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="criminal">Criminal Defense</option>
+                                <option value="corporate">Corporate Law</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="family">Family Law</option>
+                                <option value="contracts">Contract Law</option>
+                                <option value="civil">Civil Litigation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Brief Description of Your Legal Matter</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Afridi Law Associates</h3>
+                    <p>Providing exceptional legal services in Karachi for over 20 years. Our team of experienced attorneys is dedicated to achieving the best possible outcomes for our clients.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="nav-link" data-page="home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#" class="nav-link" data-page="team"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        <li><a href="#" class="nav-link" data-page="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Practice Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Criminal Defense</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Real Estate</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Family Law</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Civil Litigation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Afridi Law Associates. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('#main-nav');
+        
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Page Navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+        const pages = document.querySelectorAll('.page');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetPage = link.getAttribute('data-page');
+                
+                // Hide all pages
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
+                
+                // Show target page
+                document.getElementById(targetPage).classList.add('active');
+                
+                // Close mobile menu if open
+                mainNav.classList.remove('active');
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your message. We will contact you shortly.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
+                    
