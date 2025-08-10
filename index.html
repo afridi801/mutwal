@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afridi Law Associates | Matwali Afridi - Experienced Karachi Lawyer</title>
     <meta name="description" content="Matwali Afridi, a seasoned Karachi lawyer with 20+ years of experience, provides expert legal services in corporate, criminal, and civil litigation.">
+    <meta name="keywords" content="Karachi lawyer, Matwali Afridi, legal services, criminal defense, corporate law, real estate law">
+    <meta property="og:title" content="Afridi Law Associates">
+    <meta property="og:description" content="Expert legal services in Karachi by Matwali Afridi.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <style>
-        /* Global Styles */
         :root {
             --primary-color: #1a3e72;
             --secondary-color: #d4af37;
@@ -17,42 +22,43 @@
             --danger-color: #dc3545;
             --max-width: 1200px;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Georgia', serif;
             line-height: 1.6;
             color: var(--dark-color);
             background-color: #f9f9f9;
         }
-        
+
         a {
             text-decoration: none;
             color: var(--primary-color);
             transition: all 0.3s ease;
         }
-        
+
         ul {
             list-style: none;
         }
-        
+
         img {
             width: 100%;
             height: auto;
+            display: block;
         }
-        
+
         .container {
             max-width: var(--max-width);
             margin: auto;
             padding: 0 2rem;
             overflow: hidden;
         }
-        
+
         .btn {
             display: inline-block;
             background: var(--primary-color);
@@ -60,57 +66,37 @@
             padding: 0.8rem 1.8rem;
             border: none;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-right: 1rem;
             margin-bottom: 1rem;
-            transition: all 0.3s ease;
-            outline: none;
             border-radius: 4px;
             font-weight: 600;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .btn:hover {
             background: var(--accent-color);
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            color: #fff;
         }
-        
+
         .btn-secondary {
             background: var(--secondary-color);
             color: #000;
         }
-        
+
         .btn-secondary:hover {
             background: #e8c252;
-            color: #000;
         }
-        
-        .text-primary {
-            color: var(--primary-color);
-        }
-        
-        .text-secondary {
-            color: var(--secondary-color);
-        }
-        
-        .text-accent {
-            color: var(--accent-color);
-        }
-        
-        .bg-dark {
-            background: var(--dark-color);
-            color: #fff;
-        }
-        
-        .bg-light {
-            background: var(--light-color);
-            color: var(--dark-color);
-        }
-        
+
+        .text-primary { color: var(--primary-color); }
+        .text-secondary { color: var(--secondary-color); }
+        .text-accent { color: var(--accent-color); }
+        .bg-dark { background: var(--dark-color); color: #fff; }
+        .bg-light { background: var(--light-color); color: var(--dark-color); }
+
         .section-title {
             font-size: 2.5rem;
             text-align: center;
@@ -121,7 +107,7 @@
             margin-left: 50%;
             transform: translateX(-50%);
         }
-        
+
         .section-title:after {
             content: '';
             position: absolute;
@@ -131,29 +117,28 @@
             bottom: 0;
             left: 20%;
         }
-        
+
         .section-padding {
-            padding: 6rem 0;
+            padding: 4rem 0;
         }
-        
+
         /* Header */
         #main-header {
             background: #fff;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
             border-bottom: 3px solid var(--secondary-color);
         }
-        
+
         #main-header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem;
-            position: relative;
+            padding: 1rem 2rem;
         }
-        
+
         #main-header .logo {
             font-size: 1.8rem;
             font-weight: bold;
@@ -161,482 +146,518 @@
             display: flex;
             align-items: center;
         }
-        
+
         #main-header .logo img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
             object-fit: contain;
         }
-        
+
         #main-header .logo span {
             color: var(--accent-color);
         }
-        
-        /* Mobile Menu Toggle */
+
         .menu-toggle {
             display: none;
-            cursor: pointer;
+            background: none;
+            border: none;
             font-size: 1.5rem;
             color: var(--primary-color);
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1002;
         }
-        
+
         #main-nav {
             display: flex;
+            align-items: center;
         }
-        
+
         #main-nav li {
-            margin-left: 2rem;
-            position: relative;
+            margin: 0 1.5rem;
         }
-        
+
         #main-nav li a {
-            padding: 0.5rem 0;
-            font-weight: 600;
-            font-size: 1rem;
-            color: var(--dark-color);
-            position: relative;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            display: block;
+            transition: color 0.3s ease, background 0.3s ease;
         }
-        
-        #main-nav li a:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: var(--accent-color);
-            bottom: 0;
-            left: 0;
-            transition: width 0.3s ease;
-        }
-        
-        #main-nav li a:hover:after {
-            width: 100%;
-        }
-        
-        #main-nav li a:hover {
+
+        #main-nav li a:hover,
+        #main-nav li a[aria-current="page"] {
             color: var(--accent-color);
+            background: rgba(139, 0, 0, 0.1);
+            border-radius: 4px;
         }
-        
+
         /* Hero Section */
         #hero {
             background: linear-gradient(rgba(26, 62, 114, 0.85), rgba(26, 62, 114, 0.85)), 
-                        url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            height: 90vh;
+                        url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            min-height: 70vh;
             color: #fff;
             display: flex;
             align-items: center;
             text-align: left;
-            position: relative;
+            padding: 2rem 0;
         }
-        
+
         #hero .hero-content {
-            max-width: 800px;
+            max-width: 700px;
             padding: 2rem;
             animation: fadeIn 1.5s ease;
         }
-        
+
         #hero h1 {
-            font-size: 3.2rem;
+            font-size: 2.8rem;
             margin-bottom: 1.5rem;
-            line-height: 1.2;
+            line-height: 1.3;
             font-weight: 700;
         }
-        
+
         #hero h1 span {
             color: var(--secondary-color);
         }
-        
+
         #hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2.5rem;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
             max-width: 600px;
         }
-        
+
         .hero-btns {
             display: flex;
             flex-wrap: wrap;
+            gap: 1rem;
         }
-        
+
         /* About Section */
         #about {
-            padding: 6rem 0;
+            padding: 5rem 0;
             background: #fff;
         }
-        
+
         #about .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        
+
         #about img {
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.5s ease;
+            max-width: 500px;
         }
-        
+
         #about img:hover {
-            transform: scale(1.02);
+            transform: scale(1.03);
         }
-        
+
         #about h2 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-bottom: 1.5rem;
             color: var(--primary-color);
             line-height: 1.3;
         }
-        
+
         #about p {
             margin-bottom: 1.5rem;
             font-size: 1.1rem;
             line-height: 1.8;
         }
-        
+
         .about-highlights {
             margin: 2rem 0;
         }
-        
+
         .about-highlights li {
             margin-bottom: 1rem;
             position: relative;
             padding-left: 2rem;
             font-size: 1.1rem;
         }
-        
+
         .about-highlights li:before {
-            content: '\f00c';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
+            content: '✓';
             color: var(--secondary-color);
             position: absolute;
             left: 0;
             top: 0;
         }
-        
+
         /* Services Section */
         #services {
-            padding: 6rem 0;
+            padding: 5rem 0;
             background: var(--light-color);
         }
-        
+
         #services .services-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
-        
+
         #services .service-box {
             background: #fff;
-            padding: 2.5rem 2rem;
+            padding: 2rem;
             border-radius: 5px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             border-top: 4px solid var(--secondary-color);
             text-align: center;
         }
-        
+
         #services .service-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         #services .service-box i {
             color: var(--secondary-color);
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            margin-bottom: 1.2rem;
         }
-        
+
         #services .service-box h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
             color: var(--primary-color);
         }
-        
+
         #services .service-box p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             color: #555;
+            font-size: 0.95rem;
         }
-        
+
         /* Team Section */
         #team {
-            padding: 6rem 0;
+            padding: 5rem 0;
             background: #fff;
         }
-        
+
         #team .team-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
-        
+
         #team .team-member {
             background: #fff;
             padding: 2rem;
             border-radius: 5px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             text-align: center;
             transition: all 0.3s ease;
             border-top: 4px solid var(--secondary-color);
         }
-        
+
         #team .team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         #team .team-member img {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto 1.5rem;
-            border: 5px solid var(--light-color);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 1.2rem;
+            border: 4px solid var(--light-color);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         #team .team-member h3 {
             color: var(--primary-color);
             margin-bottom: 0.5rem;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
-        
+
         #team .team-member p.position {
             color: var(--accent-color);
             font-weight: bold;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
         }
-        
+
         #team .team-member p.bio {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             color: #555;
+            font-size: 0.95rem;
         }
-        
+
         .team-social {
             display: flex;
             justify-content: center;
-            margin-top: 1.5rem;
+            margin-top: 1.2rem;
         }
-        
+
         .team-social a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             background: var(--light-color);
             color: var(--primary-color);
             border-radius: 50%;
             margin: 0 0.5rem;
             transition: all 0.3s ease;
         }
-        
+
         .team-social a:hover {
             background: var(--primary-color);
             color: #fff;
             transform: translateY(-3px);
         }
-        
+
         /* Testimonials */
         #testimonials {
-            padding: 6rem 0;
+            padding: 5rem 0;
             background: var(--light-color);
         }
-        
+
         .testimonials-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
-        
+
         .testimonial {
             background: #fff;
-            padding: 2.5rem;
+            padding: 2rem;
             border-radius: 5px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
             position: relative;
         }
-        
+
         .testimonial:before {
             content: '\f10d';
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             color: var(--secondary-color);
-            font-size: 3rem;
+            font-size: 2.5rem;
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 15px;
+            left: 15px;
             opacity: 0.2;
         }
-        
+
         .testimonial-content {
             position: relative;
             z-index: 1;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
             color: #555;
         }
-        
+
         .testimonial-author {
             display: flex;
             align-items: center;
         }
-        
+
         .testimonial-author img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             margin-right: 1rem;
             object-fit: cover;
         }
-        
+
         .author-info h4 {
             color: var(--primary-color);
             margin-bottom: 0.3rem;
+            font-size: 1.1rem;
         }
-        
+
         .author-info p {
             color: #777;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
-        
+
         /* Contact Section */
         #contact {
-            padding: 6rem 0;
+            padding: 5rem 0;
             background: #fff;
         }
-        
+
         #contact .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        
+
         #contact .contact-info {
             background: var(--primary-color);
             color: #fff;
-            padding: 3rem;
+            padding: 2.5rem;
             border-radius: 5px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         #contact .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
             position: relative;
-            padding-bottom: 1rem;
+            padding-bottom: 0.8rem;
         }
-        
+
         #contact .contact-info h3:after {
             content: '';
             position: absolute;
-            width: 60px;
+            width: 50px;
             height: 3px;
             background: var(--secondary-color);
             bottom: 0;
             left: 0;
         }
-        
+
         #contact .contact-info p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             display: flex;
             align-items: flex-start;
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1rem;
+            line-height: 1.7;
         }
-        
+
         #contact .contact-info i {
-            margin-right: 1rem;
+            margin-right: 0.8rem;
             color: var(--secondary-color);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-top: 3px;
         }
-        
+
         #contact .contact-form {
             background: #fff;
-            padding: 3rem;
+            padding: 2.5rem;
             border-radius: 5px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             border: 1px solid #eee;
         }
-        
+
         #contact .contact-form h3 {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
             color: var(--primary-color);
             position: relative;
-            padding-bottom: 1rem;
+            padding-bottom: 0.8rem;
         }
-        
+
         #contact .contact-form h3:after {
             content: '';
             position: absolute;
-            width: 60px;
+            width: 50px;
             height: 3px;
             background: var(--secondary-color);
             bottom: 0;
             left: 0;
         }
-        
+
         #contact .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
-        
+
         #contact .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
             color: #555;
+            font-size: 0.95rem;
         }
-        
+
         #contact .form-group input,
         #contact .form-group textarea,
         #contact .form-group select {
             width: 100%;
-            padding: 0.8rem 1rem;
+            padding: 0.7rem 1rem;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-family: 'Georgia', serif;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
         }
-        
+
         #contact .form-group input:focus,
         #contact .form-group textarea:focus,
         #contact .form-group select:focus {
             border-color: var(--primary-color);
             outline: none;
-            box-shadow: 0 0 0 3px rgba(26, 62, 114, 0.1);
+            box-shadow: 0 0 0 2px rgba(26, 62, 114, 0.1);
         }
-        
+
         #contact .form-group textarea {
-            height: 150px;
+            height: 120px;
             resize: vertical;
         }
-        
+
+        /* Success Message Modal */
+        .success-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1003;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .success-modal p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+
+        .success-modal .btn {
+            margin: 0 auto;
+            padding: 0.7rem 1.5rem;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1002;
+        }
+
         /* Footer */
         #main-footer {
             background: var(--dark-color);
             color: #fff;
-            padding: 4rem 0 2rem;
+            padding: 3rem 0 1.5rem;
         }
-        
+
         #main-footer .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
-        
+
         #main-footer .footer-col h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
             color: var(--secondary-color);
             position: relative;
             padding-bottom: 0.5rem;
         }
-        
+
         #main-footer .footer-col h3:after {
             content: '';
             position: absolute;
@@ -646,109 +667,133 @@
             bottom: 0;
             left: 0;
         }
-        
+
         #main-footer .footer-col p {
             margin-bottom: 1rem;
             color: #bbb;
-            line-height: 1.8;
+            line-height: 1.7;
+            font-size: 0.95rem;
         }
-        
+
         #main-footer .footer-links li {
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.7rem;
         }
-        
+
         #main-footer .footer-links a {
             color: #bbb;
             display: block;
             transition: all 0.3s ease;
+            font-size: 0.95rem;
         }
-        
+
         #main-footer .footer-links a:hover {
             color: var(--secondary-color);
             transform: translateX(5px);
         }
-        
+
         #main-footer .footer-links i {
             margin-right: 0.5rem;
             color: var(--secondary-color);
         }
-        
+
         #main-footer .social-links {
             display: flex;
-            margin-top: 1.5rem;
+            margin-top: 1.2rem;
         }
-        
+
         #main-footer .social-links a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             background: rgba(255, 255, 255, 0.1);
             color: #fff;
             border-radius: 50%;
-            margin-right: 1rem;
+            margin-right: 0.8rem;
             transition: all 0.3s ease;
         }
-        
+
         #main-footer .social-links a:hover {
             background: var(--secondary-color);
             color: #000;
             transform: translateY(-3px);
         }
-        
+
         #main-footer .copyright {
-            padding-top: 2rem;
+            padding-top: 1.5rem;
             border-top: 1px solid #444;
             text-align: center;
             color: #bbb;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
-        
+
         /* Page Navigation */
         .page {
             display: none;
         }
-        
+
         .page.active {
             display: block;
         }
-        
+
         /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
-        /* Responsive */
-        @media (max-width: 992px) {
-            .section-title {
-                font-size: 2.2rem;
+
+        /* Responsive Adjustments */
+        @media (min-width: 992px) {
+            #hero {
+                min-height: 80vh;
             }
-            
+
+            #hero .hero-content {
+                max-width: 800px;
+                padding: 3rem;
+            }
+
             #hero h1 {
-                font-size: 2.8rem;
+                font-size: 3.5rem;
             }
-            
+
+            #hero p {
+                font-size: 1.3rem;
+            }
+
             #about .about-content {
-                gap: 2rem;
+                gap: 4rem;
+                max-width: 1100px;
+            }
+
+            #about img {
+                max-width: 600px;
+            }
+
+            #contact .contact-container {
+                gap: 4rem;
+                max-width: 1100px;
+            }
+
+            #main-nav li {
+                margin: 0 2rem;
+            }
+
+            #main-nav li a {
+                font-size: 1.2rem;
             }
         }
-        
+
         @media (max-width: 768px) {
-            #main-header .container {
-                flex-direction: row;
-                padding: 1rem;
-            }
-            
             .menu-toggle {
                 display: block;
             }
-            
+
             #main-nav {
                 display: none;
-                position: absolute;
-                top: 100%;
+                position: fixed;
+                top: 80px;
                 left: 0;
                 width: 100%;
                 background: #fff;
@@ -757,99 +802,122 @@
                 box-shadow: 0 5px 10px rgba(0,0,0,0.1);
                 z-index: 1000;
                 border-top: 1px solid #eee;
+                max-height: calc(100vh - 80px);
+                overflow-y: auto;
             }
-            
+
             #main-nav.active {
                 display: flex;
-                animation: fadeInDown 0.3s ease;
             }
-            
+
             #main-nav li {
                 margin: 0;
-                padding: 0.5rem 2rem;
+                padding: 0.8rem 2rem;
                 border-bottom: 1px solid #eee;
             }
-            
+
             #main-nav li a {
-                display: block;
                 padding: 0.5rem 0;
+                font-size: 1rem;
             }
-            
+
             #hero {
-                height: auto;
-                padding: 6rem 0;
+                min-height: auto;
+                padding: 5rem 0;
                 text-align: center;
             }
-            
+
             #hero .hero-content {
                 margin: 0 auto;
                 text-align: center;
+                max-width: 90%;
             }
-            
+
             #hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
-            
+
             #hero p {
-                margin: 0 auto 2.5rem;
+                font-size: 1.1rem;
+                margin: 0 auto 2rem;
             }
-            
+
             .hero-btns {
                 justify-content: center;
+                flex-direction: column;
+                align-items: center;
             }
-            
+
             #about .about-content,
             #contact .contact-container {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
-            
+
             #about img {
                 order: -1;
-                max-width: 500px;
+                max-width: 400px;
                 margin: 0 auto;
             }
-            
+
             .section-title {
                 font-size: 2rem;
             }
-            
+
             .section-padding {
-                padding: 4rem 0;
+                padding: 3rem 0;
             }
-            
-            @keyframes fadeInDown {
-                from {
-                    opacity: 0;
-                    transform: translateY(-10px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+
+            .testimonial-author img {
+                width: 45px;
+                height: 45px;
+            }
+
+            #team .team-member img {
+                width: 140px;
+                height: 140px;
             }
         }
-        
+
         @media (max-width: 576px) {
             #hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
-            
+
             #hero p {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
-            
+
             .btn {
                 width: 100%;
                 margin-right: 0;
+                padding: 0.7rem;
             }
-            
+
             .hero-btns {
                 flex-direction: column;
             }
-            
+
             #contact .contact-info,
             #contact .contact-form {
-                padding: 2rem 1.5rem;
+                padding: 1.5rem;
+            }
+
+            .testimonial-author {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .testimonial-author img {
+                margin-bottom: 1rem;
+            }
+
+            #team .team-container {
+                grid-template-columns: 1fr;
+            }
+
+            #about img {
+                max-width: 100%;
             }
         }
     </style>
@@ -863,19 +931,21 @@
     <header id="main-header">
         <div class="container">
             <div class="logo">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMWEzZTcyIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHptMCA0NDhjLTExMC41IDAtMjAwLTg5LjUtMjAwLTIwMFMxNDUuNSA1NiAyNTYgNTZzMjAwIDg5LjUgMjAwIDIwMC04OS41IDIwMC0yMDAgMjAwWm0xMDEuOC0yNjEuN0wtMjE2LjIgMzUyLjJjLTQuNy00LjctNC43LTEyLjMgMC0xN0wzNTcuOCAyNDYuM2M0LjctNC43IDQuNy0xMi4zIDAtMTdsLTExMC41LTExMGMtNC43LTQuNy0xMi4zLTQuNy0xNyAwbC0xNyAxNyA5My41IDkzLjUtNjIuMyA2Mi4zLTkzLjUtOTMuNS0xNy0xN2MtNC43LTQuNy0xMi4zLTQuNy0xNyAwbC0xMTAgMTEwLjVjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wxMTAuNSAxMTBjNC43IDQuNyAxMi4zIDQuNyAxNyAwbDE3LTE3LTkzLjUtOTMuNSA2Mi4zLTYyLjMgOTMuNSA5My41IDE3IDE3YzQuNyA0LjcgMTIuMyA0LjcgMTcgMGwxMTAuNS0xMTFjNC42LTQuNiA0LjYtMTIuMiAwLTE2Ljl6Ii8+PC9zdmc+" alt="Afridi Law Associates Logo">
+                <img src="https://via.placeholder.com/60x60?text=Logo" alt="Afridi Law Associates Logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMWEzZTcyIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHptMCA0NDhjLTExMC41IDAtMjAwLTg5LjUtMjAwLTIwMFMxNDUuNSA1NiAyNTYgNTZzMjAwIDg5LjUgMjAwIDIwMC04OS41IDIwMC0yMDAgMjAwWm0xMDEuOC0yNjEuN0wtMjE2LjIgMzUyLjJjLTQuNy00LjctNC43LTEyLjMgMC0xN0wzNTcuOCAyNDYuM2M0LjctNC43IDQuNy0xMi4zIDAtMTdsLTExMC41LTExMGMtNC43LTQuNy0xMi4zLTQuNy0xNyAwbC0xNyAxNyA5My41IDkzLjUtNjIuMyA2Mi4zLTkzLjUtOTMuNS0xNy0xN2MtNC43LTQuNy0xMi4zLTQuNy0xNyAwbC0xMTAgMTEwLjVjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wxMTAuNSAxMTBjNC43IDQuNyAxMi4zIDQuNyAxNyAwbDE3LTE3LTkzLjUtOTMuNSA2Mi4zLTYyLjMgOTMuNSA5My41IDE3IDE3YzQuNyA0LjcgMTIuMyA0LjcgMTcgMGwxMTAuNS0xMTFjNC42LTQuNiA0LjYtMTIuMiAwLTE2Ljl6Ii8+PC9zdmc+';">
                 Afridi <span>Law Associates</span>
             </div>
-            <div class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
-            </div>
-            <ul id="main-nav">
-                <li><a href="#" class="nav-link" data-page="home">Home</a></li>
-                <li><a href="#" class="nav-link" data-page="about">About</a></li>
-                <li><a href="#" class="nav-link" data-page="services">Services</a></li>
-                <li><a href="#" class="nav-link" data-page="team">Our Team</a></li>
-                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
-            </ul>
+            </button>
+            <nav id="main-nav" role="navigation">
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="home" aria-current="page">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="#" class="nav-link" data-page="services">Services</a></li>
+                    <li><a href="#" class="nav-link" data-page="team">Our Team</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -943,7 +1013,7 @@
                             <p>Mr. Afridi's representation in my criminal case was exceptional. His deep knowledge of Karachi's legal system and strategic approach resulted in the best possible outcome for my situation.</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ali Raza, Business Owner">
                             <div class="author-info">
                                 <h4>Ali Raza</h4>
                                 <p>Business Owner</p>
@@ -955,7 +1025,7 @@
                             <p>I've worked with several lawyers over the years, but Matwali Afridi stands out for his integrity, attention to detail, and commitment to his clients. He handled our corporate merger flawlessly.</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fatima Khan, CEO">
                             <div class="author-info">
                                 <h4>Fatima Khan</h4>
                                 <p>CEO, Tech Solutions</p>
@@ -976,7 +1046,6 @@
                     <h2>20+ Years of Legal Excellence in Karachi</h2>
                     <p>Founded by Matwali Afridi in 2003, Afridi Law Associates has grown from a solo practice to one of Karachi's most respected law firms. Our founder's vision was to create a practice that combines traditional legal values with innovative strategies to serve clients effectively in Pakistan's complex legal environment.</p>
                     <p>Mr. Afridi began his career as a public prosecutor before establishing his private practice, giving him unique insights into both sides of the legal system. This experience informs our approach to every case we handle.</p>
-                    
                     <div class="about-highlights">
                         <h3 style="margin: 2rem 0 1rem; color: var(--primary-color);">Why Choose Our Firm:</h3>
                         <ul>
@@ -987,7 +1056,6 @@
                             <li>Commitment to integrity and ethical practice</li>
                         </ul>
                     </div>
-                    
                     <a href="#" class="btn nav-link" data-page="team">Meet Our Team</a>
                 </div>
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Afridi Law Associates Office">
@@ -1021,21 +1089,19 @@
                 <div class="service-box">
                     <i class="fas fa-users"></i>
                     <h3>Family Law</h3>
-                    <p>Sensitive handling of divorce, child custody, inheritance disputes, and other family matters with the discretion and compassion these personal situations require under Pakistani law.</p>
+                    <p>Sensitive handling of family matters including divorce, child custody, inheritance disputes, and marital agreements under Pakistani law, with a focus on protecting our clients' rights and family interests.</p>
                     <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
                 </div>
                 <div class="service-box">
                     <i class="fas fa-file-contract"></i>
-                                    <div class="service-box">
-                    <i class="fas fa-file-contract"></i>
                     <h3>Contract Law</h3>
-                    <p>Drafting, reviewing, and negotiating contracts of all types including employment agreements, service contracts, partnership agreements, and commercial leases with precision and foresight.</p>
+                    <p>Drafting, reviewing, and negotiating all types of legal contracts and agreements to protect your interests in business dealings, partnerships, employment matters, and commercial transactions.</p>
                     <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
                 </div>
                 <div class="service-box">
                     <i class="fas fa-balance-scale"></i>
                     <h3>Civil Litigation</h3>
-                    <p>Aggressive representation in civil disputes including debt recovery, property disputes, breach of contract cases, and other civil matters in Karachi courts at all levels.</p>
+                    <p>Representation in civil disputes including breach of contract, property disputes, defamation cases, and other civil matters before Karachi's district and high courts.</p>
                     <a href="#" class="btn btn-secondary nav-link" data-page="contact" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Consult Now</a>
                 </div>
             </div>
@@ -1048,33 +1114,33 @@
             <h2 class="section-title">Our Legal Team</h2>
             <div class="team-container">
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Matwali Afridi">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Matwali Afridi, Founding Partner">
                     <h3>Matwali Afridi</h3>
                     <p class="position">Founding Partner</p>
-                    <p class="bio">With over 20 years of experience in Karachi courts, Mr. Afridi specializes in criminal defense and corporate law, bringing strategic insight to every case.</p>
+                    <p class="bio">With over 20 years of experience in Karachi's legal community, Mr. Afridi specializes in criminal defense and corporate law. He has successfully represented clients in high-profile cases throughout Pakistan.</p>
                     <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:matwali@afridilaw.com" aria-label="Email Matwali Afridi"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Sarah Ahmed">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Sarah Ahmed, Senior Associate">
                     <h3>Sarah Ahmed</h3>
                     <p class="position">Senior Associate</p>
-                    <p class="bio">Specializing in family law and civil litigation, Ms. Ahmed brings compassion and tenacity to her cases, with a track record of successful outcomes.</p>
+                    <p class="bio">Specializing in family law and civil litigation, Ms. Ahmed brings 12 years of experience to the firm. She is known for her compassionate approach to sensitive legal matters.</p>
                     <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:sarah@afridilaw.com" aria-label="Email Sarah Ahmed"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Kamran Siddiqui">
-                    <h3>Kamran Siddiqui</h3>
+                    <img src="https://images.unsplash.com/photo-1564564244660-5d73c057f2d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Kamran Malik, Corporate Law Specialist">
+                    <h3>Kamran Malik</h3>
                     <p class="position">Corporate Law Specialist</p>
-                    <p class="bio">With expertise in corporate governance and compliance, Mr. Siddiqui advises businesses on navigating Pakistan's complex regulatory environment.</p>
+                    <p class="bio">Mr. Malik focuses on corporate law and commercial transactions, with particular expertise in mergers and acquisitions. He has advised numerous multinational corporations operating in Pakistan.</p>
                     <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:kamran@afridilaw.com" aria-label="Email Kamran Malik"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -1088,55 +1154,62 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Get In Touch</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Suite 402, Business Plaza, Shahrah-e-Faisal, Karachi, Pakistan</p>
-                    <p><i class="fas fa-phone-alt"></i> +92 21 34567890</p>
-                    <p><i class="fas fa-mobile-alt"></i> +92 300 1234567</p>
-                    <p><i class="fas fa-envelope"></i> info@afridilaw.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Suite 401, Business Plaza, Shahrah-e-Faisal, Karachi, Pakistan</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+922134567890">+92 21 34567890</a></p>
+                    <p><i class="fas fa-mobile-alt"></i> <a href="tel:+923001234567">+92 300 1234567</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@afridilaw.com">info@afridilaw.com</a></p>
                     <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
                     <div class="social-links" style="margin-top: 2rem;">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
                     <h3>Schedule a Consultation</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" aria-label="Contact Form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required aria-required="true">
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required aria-required="true">
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" id="phone" name="phone" required aria-required="true" pattern="[0-9]{10,}">
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Required</label>
-                            <select id="service" name="service">
+                            <label for="service">Legal Service Needed</label>
+                            <select id="service" name="service" required aria-required="true">
                                 <option value="">Select a service</option>
                                 <option value="criminal">Criminal Defense</option>
                                 <option value="corporate">Corporate Law</option>
                                 <option value="real-estate">Real Estate</option>
                                 <option value="family">Family Law</option>
-                                <option value="contracts">Contract Law</option>
+                                <option value="contract">Contract Law</option>
                                 <option value="civil">Civil Litigation</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="message">Brief Description of Your Legal Matter</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <textarea id="message" name="message" required aria-required="true"></textarea>
                         </div>
-                        <button type="submit" class="btn">Submit Request</button>
+                        <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay"></div>
+    <div class="success-modal">
+        <p>Thank you for your message! We will contact you within 24 hours.</p>
+        <button class="btn close-modal">Close</button>
+    </div>
 
     <!-- Footer -->
     <footer id="main-footer">
@@ -1144,11 +1217,11 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <h3>Afridi Law Associates</h3>
-                    <p>Providing exceptional legal services in Karachi for over 20 years. Our team of experienced attorneys is dedicated to achieving the best possible outcomes for our clients.</p>
+                    <p>Providing exceptional legal services in Karachi for over 20 years. Our firm is committed to delivering strategic, ethical, and effective legal solutions.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -1164,63 +1237,135 @@
                 <div class="footer-col">
                     <h3>Practice Areas</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Criminal Defense</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Real Estate</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Family Law</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Civil Litigation</a></li>
+                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Criminal Defense</a></li>
+                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
+                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Real Estate</a></li>
+                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Family Law</a></li>
+                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Civil Litigation</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Afridi Law Associates. All Rights Reserved.</p>
+                <p>&copy; <span id="currentYear"></span> Afridi Law Associates. All Rights Reserved. | Designed for Matwali Afridi - Karachi Lawyer</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const mainNav = document.querySelector('#main-nav');
-        
-        menuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-        });
-        
-        // Page Navigation
-        const navLinks = document.querySelectorAll('.nav-link');
-        const pages = document.querySelectorAll('.page');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetPage = link.getAttribute('data-page');
-                
-                // Hide all pages
-                pages.forEach(page => {
-                    page.classList.remove('active');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('#main-nav');
+
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mainNav.classList.toggle('active');
+                menuToggle.innerHTML = mainNav.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                menuToggle.setAttribute('aria-expanded', mainNav.classList.contains('active'));
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mainNav.contains(e.target) && !menuToggle.contains(e.target)) {
+                    mainNav.classList.remove('active');
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Page Navigation
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetPage = link.getAttribute('data-page');
+
+                    // Hide all pages
+                    pages.forEach(page => {
+                        page.classList.remove('active');
+                    });
+
+                    // Show target page
+                    document.getElementById(targetPage).classList.add('active');
+
+                    // Update ARIA current
+                    navLinks.forEach(l => l.removeAttribute('aria-current'));
+                    link.setAttribute('aria-current', 'page');
+
+                    // Close mobile menu
+                    mainNav.classList.remove('active');
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    menuToggle.setAttribute('aria-expanded', 'false');
+
+                    // Scroll to top
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
                 });
-                
-                // Show target page
-                document.getElementById(targetPage).classList.add('active');
-                
-                // Close mobile menu if open
-                mainNav.classList.remove('active');
-                
-                // Scroll to top
-                window.scrollTo(0, 0);
             });
+
+            // Form Submission
+            const contactForm = document.getElementById('contactForm');
+            const successModal = document.querySelector('.success-modal');
+            const modalOverlay = document.querySelector('.modal-overlay');
+            const closeModalBtn = document.querySelector('.close-modal');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Basic validation
+                    const name = contactForm.querySelector('#name').value.trim();
+                    const email = contactForm.querySelector('#email').value.trim();
+                    const phone = contactForm.querySelector('#phone').value.trim();
+                    const service = contactForm.querySelector('#service').value;
+                    const message = contactForm.querySelector('#message').value.trim();
+
+                    if (!name || !email || !phone || !service || !message) {
+                        alert('Please fill out all required fields.');
+                        return;
+                    }
+
+                    // Placeholder for backend submission
+                    // Example: Send form data to a server
+                    /*
+                    fetch('/submit-form', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name, email, phone, service, message })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        successModal.style.display = 'block';
+                        modalOverlay.style.display = 'block';
+                        contactForm.reset();
+                    })
+                    .catch(error => {
+                        alert('An error occurred. Please try again later.');
+                    });
+                    */
+
+                    // Show success modal (temporary for demo)
+                    successModal.style.display = 'block';
+                    modalOverlay.style.display = 'block';
+                    contactForm.reset();
+                });
+            }
+
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', function() {
+                    successModal.style.display = 'none';
+                    modalOverlay.style.display = 'none';
+                });
+            }
+
+            // Update copyright year
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
         });
-        
-        // Form Submission
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Thank you for your message. We will contact you shortly.');
-                contactForm.reset();
-            });
-        }
     </script>
 </body>
 </html>
