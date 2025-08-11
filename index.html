@@ -136,11 +136,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 0.3rem 1rem;
         }
 
         #main-header .logo {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: bold;
             color: var(--primary-color);
             display: flex;
@@ -148,9 +148,9 @@
         }
 
         #main-header .logo img {
-            width: 60px;
-            height: 60px;
-            margin-right: 1rem;
+            width: 50px;
+            height: 50px;
+            margin-right: 0.8rem;
             object-fit: contain;
         }
 
@@ -162,10 +162,10 @@
             display: none;
             background: none;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: var(--primary-color);
             cursor: pointer;
-            padding: 0.5rem;
+            padding: 0.3rem;
             z-index: 1002;
         }
 
@@ -175,21 +175,23 @@
         }
 
         #main-nav li {
-            margin: 0 1.5rem;
+            margin: 0 0.3rem;
         }
 
         #main-nav li a {
-            font-size: 1.1rem;
-            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.4rem;
             display: block;
             transition: color 0.3s ease, background 0.3s ease;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 4px;
         }
 
         #main-nav li a:hover,
         #main-nav li a[aria-current="page"] {
-            color: var(--accent-color);
-            background: rgba(139, 0, 0, 0.1);
-            border-radius: 4px;
+            color: #fff;
+            background: var(--secondary-color);
         }
 
         /* Hero Section */
@@ -777,11 +779,11 @@
             }
 
             #main-nav li {
-                margin: 0 2rem;
+                margin: 0 1rem;
             }
 
             #main-nav li a {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
 
@@ -793,16 +795,16 @@
             #main-nav {
                 display: none;
                 position: fixed;
-                top: 80px;
+                top: 50px;
                 left: 0;
                 width: 100%;
                 background: #fff;
                 flex-direction: column;
-                padding: 1rem 0;
+                padding: 0.3rem 0;
                 box-shadow: 0 5px 10px rgba(0,0,0,0.1);
                 z-index: 1000;
                 border-top: 1px solid #eee;
-                max-height: calc(100vh - 80px);
+                max-height: calc(100vh - 50px);
                 overflow-y: auto;
             }
 
@@ -812,13 +814,13 @@
 
             #main-nav li {
                 margin: 0;
-                padding: 0.8rem 2rem;
+                padding: 0.3rem 1.2rem;
                 border-bottom: 1px solid #eee;
             }
 
             #main-nav li a {
-                padding: 0.5rem 0;
-                font-size: 1rem;
+                padding: 0.2rem 0;
+                font-size: 0.8rem;
             }
 
             #hero {
@@ -939,11 +941,10 @@
             </button>
             <nav id="main-nav" role="navigation">
                 <ul>
-                    <li><a href="#" class="nav-link" data-page="home" aria-current="page">Home</a></li>
-                    <li><a href="#" class="nav-link" data-page="about">About</a></li>
-                    <li><a href="#" class="nav-link" data-page="services">Services</a></li>
-                    <li><a href="#" class="nav-link" data-page="team">Our Team</a></li>
-                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                    <li><a href="#" class="nav-link" data-page="home" aria-current="page">HOME</a></li>
+                    <li><a href="#" class="nav-link" data-page="team">OUR TEAM</a></li>
+                    <li><a href="#" class="nav-link" data-page="services">SERVICES</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -1228,9 +1229,8 @@
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#" class="nav-link" data-page="home"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Services</a></li>
                         <li><a href="#" class="nav-link" data-page="team"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        <li><a href="#" class="nav-link" data-page="services"><i class="fas fa-chevron-right"></i> Services</a></li>
                         <li><a href="#" class="nav-link" data-page="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
@@ -1369,4 +1369,3 @@
     </script>
 </body>
 </html>
-                    
